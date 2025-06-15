@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Audit Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        .email {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .rule {
+            margin: 5px 0;
+        }
+        .pass {
+            color: green;
+        }
+        .fail {
+            color: red;
+        }
+        .summary {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Audit Report</h1>
+    <h2>Overall Score: {{ thread_score }}</h2>
+    <div class="summary">
+        <h3>Summary</h3>
+        <p>Strengths: {{ strengths | join(', ') }}</p>
+        <p>Areas for Improvement: {{ improvements | join(', ') }}</p>
+    </div>
+    {% for email in feedback %}
+    <div class="email">
+        <h2>Email {{ loop.index }}</h2>
+        {% for rule in email.rules %}
+        <div class="rule">
+            <strong>Rule:</strong> {{ rule.rule }} <br>
+            <strong>Status:</strong> <span class="{{ rule.status }}">{{ rule.status }}</span> <br>
+            <strong>Score:</strong> {{ rule.score }} <br>
+            <strong>Justification:</strong> {{ rule.justification }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</body>
+</html>
