@@ -1,15 +1,41 @@
-From the provided specifications, here are the contents for the file `/email-audit-service/email-audit-service/tests/example_emails/sample2.eml`:
-
-Subject: Test Email for Compliance Audit
-From: sender@example.com
-To: recipient@example.com
+Return-Path: <sender@example.com>
+Received: from mail.example.com (mail.example.com [192.168.1.100])
+	by mx.example.com (8.14.4/8.14.4) with ESMTP id 1A2B3C4D5E6F
+	for <recipient@example.com>; Mon, 1 Jan 2023 12:00:00 +0000 (UTC)
+Message-ID: <20230101120000.67890@example.com>
 Date: Mon, 1 Jan 2023 12:00:00 +0000
+From: Alice Sender <sender@example.com>
+To: Bob Recipient <recipient@example.com>
+Subject: Test Email for Compliance Audit
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_0002_01D9C234.56789012"
 
-Dear Recipient,
+------=_NextPart_000_0002_01D9C234.56789012
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-I hope this message finds you well. I wanted to follow up on our previous conversation regarding the project timeline. Please let me know if you have any updates.
+<html>
+<body>
+<p>Dear Bob,</p>
 
-Best regards,
-Sender
+<p>I hope this message finds you well. I wanted to follow up on our previous conversation regarding the project timeline. The deadline is approaching and I would appreciate any updates you might have.</p>
 
-[Attachment: image.png]
+<p>Could you please let me know the current status of your deliverables? This will help us plan the next steps accordingly.</p>
+
+<p>Thank you for your attention to this matter.</p>
+
+<p>Best regards,<br>
+Alice Sender<br>
+Senior Project Coordinator<br>
+Example Corp</p>
+</body>
+</html>
+
+------=_NextPart_000_0002_01D9C234.56789012
+Content-Type: image/png; name="chart.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="chart.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0002_01D9C234.56789012--

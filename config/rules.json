@@ -1,27 +1,23 @@
 {
   "rules": [
     {
-      "name": "Professional Greeting",
+      "name": "professional_greeting",
       "description": "Checks if the email starts with a professional greeting.",
-      "criteria": [
-        "Dear",
-        "Hello",
-        "Hi"
-      ],
-      "pass_score": 10,
-      "fail_score": 0
+      "weight": 0.3,
+      "keywords": ["Dear", "Hello", "Hi", "Good morning", "Good afternoon", "Greetings"]
     },
     {
-      "name": "Timely Response",
-      "description": "Evaluates if the response is sent within 48 hours.",
-      "pass_score": 10,
-      "fail_score": 0
+      "name": "response_time",
+      "description": "Evaluates if the response is sent within specified time frame.",
+      "weight": 0.2,
+      "max_hours": 48
     },
     {
-      "name": "Clarity and Grammar",
+      "name": "grammar_clarity",
       "description": "Assesses the clarity and grammatical correctness of the email text.",
-      "pass_score": 10,
-      "fail_score": 0
+      "weight": 0.5,
+      "min_words": 10,
+      "max_sentences": 20
     }
   ]
 }

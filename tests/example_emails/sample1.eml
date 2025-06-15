@@ -1,13 +1,42 @@
-From: sender@example.com
-To: recipient@example.com
-Subject: Meeting Reminder
+Return-Path: <sender@example.com>
+Received: from mail.example.com (mail.example.com [192.168.1.100])
+	by mx.example.com (8.14.4/8.14.4) with ESMTP id 2A1B2C3D4E5F
+	for <recipient@example.com>; Mon, 1 Nov 2023 10:00:00 -0500 (EST)
+Message-ID: <20231101150000.12345@example.com>
 Date: Mon, 1 Nov 2023 10:00:00 -0500
+From: John Sender <sender@example.com>
+To: Jane Recipient <recipient@example.com>
+Subject: Meeting Reminder - Project Discussion
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_0001_01D9B123.45678901"
 
-Dear Recipient,
+------=_NextPart_000_0001_01D9B123.45678901
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-This is a reminder for our meeting scheduled for tomorrow at 2 PM. Please let me know if you have any questions or if you need to reschedule.
+Dear Jane,
+
+I hope this email finds you well. This is a reminder for our meeting scheduled for tomorrow at 2 PM in Conference Room A. We will be discussing the upcoming project timeline and deliverables.
+
+Please let me know if you have any questions or if you need to reschedule. I have attached the agenda for your review.
+
+Thank you for your time and I look forward to our discussion.
 
 Best regards,
-Sender
+John Sender
+Project Manager
+Example Corp
 
-Attachment: agenda.pdf
+------=_NextPart_000_0001_01D9B123.45678901
+Content-Type: application/pdf; name="agenda.pdf"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="agenda.pdf"
+
+JVBERi0xLjQKJcfsj6IKNSAwIG9iago8PAovTGVuZ3RoIDYgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVj
+b2RlCj4+CnN0cmVhbQp4nDMwMFAwULA1MAACMwtjA0Nzc4PgxKL0osSSzPw8hZKCosR8heL8opzc
+JJ5xVqgGAGK2C8YCmVuZHN0cmVhbQplbmRvYmoKNiAwIG9iago2NgplbmRvYmoKNCAwIG9iago8
+PAovVHlwZSAvUGFnZQovUGFyZW50IDMgMCBSCi9SZXNvdXJjZXMgPDwKL0ZvbnQgPDwKL0YxIDkg
+MCBSCI+Pgo+Cj4+Ci9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9Db250ZW50cyA1IDASCR4aYoKNSAw
+IG9iago8PAovVHlwZSAvRm9udAo=
+
+------=_NextPart_000_0001_01D9B123.45678901--
